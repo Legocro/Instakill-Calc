@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="calc.css">
+<script src="//rawgit.com/MikeMcl/decimal.js/master/decimal.js"></script>
+<script src="calc.js"></script>
+</head>
+<body>
+<h1 id="calc">
+        Instakill Calculator
+    </h1>
+<table id="table">
+  <tr>
+    <td style="text-align:right;">Starting Zone:</td>
+    <td>
+      <input id="startingZone" type="text" placeholder="Start zone" value="0" />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">DPS:</td>
+    <td>
+      <input id="dps" type="text" placeholder="DPS" value="0" />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">Ending Zone:</td>
+    <td>
+      <input id="endZone" type="text" placeholder="End zone" value="0" />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">Kuma level:</td>
+    <td>
+      <input id="kumaEffect" type="text" placeholder="Kuma" value="0">
+    </td>
+  </tr>
+  <table>
+    <button id="button" onclick="hp()">
+      Calculate
+    </button>
+    <div>
+   
+      <table id="thetext">
+        <td id="instakill"></td>
+        <td id="seconds"></td>
+        <td id="minutes"></td>
+        <td id="hours"></td>
+        <td id="text"></td>
+      </table>
+    </div>
+    <h4 style="text-style:monospace;">
+Input starting zone,Kuma level and either ending zone or current idle DPS.
+</h4>
+<div style="div">
+  Made by <a href="https://www.reddit.com/user/Legocro/" target="_blank">/u/Legocro</a>
+</div>
+</body>
+</html>
+ 
