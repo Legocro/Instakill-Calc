@@ -37,8 +37,7 @@ document.getElementById("dps")
         var dps1 = new Decimal(1);
         var constant = new Decimal(1);
         var playerDpsActual = playerDps.dividedBy(30);
-        while (dps1.lessThanOrEqualTo(playerDpsActual)) {
-
+function mHp(){
           if (zone.lessThanOrEqualTo(140)) {
             if (zone % 5 === 0) {
               dps1 = constant.times(10 * (zone - 1 + Math.pow(1.55, (zone - 1))) * 10)
@@ -83,18 +82,19 @@ document.getElementById("dps")
             } else {
               dps1 = hpR.times(1)
             }
-
-
           }
-          zone = zone.plus(1)
-        }
+}
+              while (dps1.lte(playerDpsActual)){
+      mHp();
+      zone=zone.plus(2);
+      }
         if (playerDps > 0) {
-          var zones = zone - startingZone
-          document.getElementById("text").innerHTML = "up to zone " + zone + "."
-
+          var zones = zone - startingZone - 2 ;
+          var display= zone - 2 ;
+          document.getElementById("text").innerHTML = "up to zone " + display + ".";
         } else {
-          var zones = endingZone - startingZone
-          document.getElementById("text").innerHTML = "."
+          var zones = endingZone - startingZone;
+          document.getElementById("text").innerHTML = ".";
 
         }
 
