@@ -1,6 +1,4 @@
-</div>
-    <script>
-//------------Enter detection for all input fields---------------//
+//------------"Enter" detection for all input fields---------------//
       document.getElementById("dps")
         .addEventListener("keyup", function(event) {
           event.preventDefault();
@@ -29,7 +27,7 @@
             document.getElementById("button").click();
           }
         });
-//------------Enter detection for all input fields-----------------//
+//------------"Enter" detection for all input fields-----------------//
 //-------------------Main function---------------------------------//
       function hp() {
 //------------------Setting global variables-----------------------//
