@@ -1,5 +1,5 @@
 body {
-  background-color: #b39bdd;
+  background-color: #3a2463;
 }
 
 #calc {
@@ -13,22 +13,62 @@ body {
 }
 
 #table td {
-  border: 3px solid #0a0a0a;
+  border: 2px solid #8c7cff;
   border-spacing: 0;
   margin: 0;
-  padding: 0px;
+  padding: 10px;
+  color:white;
+  font-size:15px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 #thetext {
   font-size: large;
-  font-style: bold;
+  color:white;
 }
 div {
   font-family: "Courier New", Courier, monospace;
   font-style: italic;
-  font-size: normal;
   position: absolute;
   bottom: -0px;
   vertical-align: bottom;
+  color:white;
 }
-
+input{
+  border-radius:5px;
+  background-color:#9886ba;
+  color:white;
+  padding:5px;
+}
+a{
+  color:white;
+}
+.div{
+  color:#efefef;
+}
+h4{
+  color:#efefef;
+  font-family:Arial, Helvetica, sans-serif;
+}
+button{
+  padding:5px;
+  border:0;
+  border-bottom:5px solid #0038b2;
+  color:white;
+  font-size:15px;
+  background:#0050ff;
+  width:100px;
+  height:30px;
+  cursor:pointer;
+  position:relative;
+}
+button:active{
+  top:2px;
+}
+button:hover{
+  background:#063396;
+  border-bottom:solid 5px #021c54;
+}
+a:hover{
+  color:#3068c1;
+}
